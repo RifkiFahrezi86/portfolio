@@ -148,6 +148,13 @@ body {
 .project-wide img { height: 100%; object-fit: cover; }
 .project img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block; border-bottom: 1px solid var(--border); }
 .project-wide img { border-bottom: none; border-right: 1px solid var(--border); }
+.saku-shot {
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(145deg, #101720, #0a0f16);
+  border-right: 1px solid var(--border);
+  min-height: 280px;
+}
+.saku-shot img { width: 150px; height: 150px; object-fit: contain; border: none; border-radius: var(--radius); }
 .project-body { padding: 1.4rem 1.5rem 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; flex: 1; }
 .project-client { color: var(--accent); font-size: 0.75rem; }
 .project-body h3 { font-size: 1.05rem; letter-spacing: -0.01em; }
