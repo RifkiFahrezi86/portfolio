@@ -3,183 +3,243 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rifki Nur Fahrezi Ahmad — Portfolio</title>
+  <title>Rifki Nur Fahrezi Ahmad | AI Engineer, Website & Automation</title>
+  <meta name="description" content="Portfolio Rifki Nur Fahrezi Ahmad. AI Engineer, Web Developer, dan Automation Specialist. Membangun website modern, workflow automation, AI integration, dan internal tools." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- NAV -->
   <nav class="nav">
-    <div class="nav-logo">Rifki<span>.</span></div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+    <a class="nav-logo" href="#home">Rifki<span>Fahrezi</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#experience">Pengalaman</a></li>
+      <li><a href="#projects">Karya</a></li>
+      <li><a href="#certificates">Sertifikat</a></li>
+      <li><a href="#contact">Kontak</a></li>
+      <li><a class="nav-cta" href="mailto:rifkifka@gmail.com">Sapa Saya</a></li>
     </ul>
-    <button class="nav-toggle" id="navToggle">☰</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu">
+      <span></span><span></span>
+    </button>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <div class="hero-avatar">
-        <img src="https://ui-avatars.com/api/?name=Rifki+Fahrezi&size=200&background=6366f1&color=fff&rounded=true&bold=true" alt="Rifki Fahrezi" />
-      </div>
-      <div class="hero-text">
-        <p class="hero-greeting">Halo, saya</p>
-        <h1 class="hero-name">Rifki Nur Fahrezi Ahmad</h1>
-        <p class="hero-role">Full Stack Developer &amp; Informatika Student</p>
-        <p class="hero-desc">Mahasiswa Informatika Universitas Muhammadiyah Makassar yang passionate di bidang web development, DevOps, dan teknologi AI.</p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">Lihat Projects</a>
-          <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="hero-greeting">Halo, saya</p>
+          <h1>Rifki Nur<br />Fahrezi Ahmad</h1>
+          <p class="hero-role">AI Engineer | Web &amp; Automation</p>
+          <p class="hero-desc">
+            Saya membangun website modern, workflow automation, AI integration,
+            dan internal tools yang membantu bisnis bekerja lebih cepat,
+            lebih cerdas, dan lebih efisien.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#projects">Lihat Karya</a>
+            <a class="btn btn-ghost" href="mailto:rifkifka@gmail.com">Hubungi Saya</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="profile.jpeg" alt="Foto Rifki Nur Fahrezi Ahmad" width="320" height="320" />
+          <p class="hero-status">Tersedia untuk proyek baru</p>
         </div>
       </div>
-    </div>
-    <div class="hero-scroll">
-      <span>Scroll Down</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
+      <div class="hero-stats">
+        <div class="stat"><strong>50+</strong><span>Proyek selesai</span></div>
+        <div class="stat"><strong>20+</strong><span>Sistem &amp; dashboard</span></div>
+        <div class="stat"><strong>12+</strong><span>Workflow AI &amp; automasi</span></div>
+        <div class="stat"><strong>2+</strong><span>Tahun pengalaman</span></div>
+      </div>
+    </section>
 
-  <!-- ABOUT -->
-  <section class="section" id="about">
-    <div class="container">
-      <h2 class="section-title">About <span>Me</span></h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>Saya adalah mahasiswa semester akhir Teknik Informatika di Universitas Muhammadiyah Makassar (Unismuh). Saya memiliki minat besar dalam pengembangan web modern, cloud computing, dan AI.</p>
-          <p>Saat ini sedang menjalani Kuliah Kerja Profesi (KKP) dan aktif mengembangkan berbagai project personal. Saya percaya bahwa teknologi adalah alat untuk menciptakan solusi nyata bagi masyarakat.</p>
-          <div class="about-info">
-            <div class="info-item"><span class="info-label">Email</span><span class="info-value">rifkifka@gmail.com</span></div>
-            <div class="info-item"><span class="info-label">Lokasi</span><span class="info-value">Makassar, Indonesia</span></div>
-            <div class="info-item"><span class="info-label">Universitas</span><span class="info-value">Unismuh Makassar</span></div>
-            <div class="info-item"><span class="info-label">Status</span><span class="info-value">Open to Work ✅</span></div>
-          </div>
-        </div>
-        <div class="about-stats">
-          <div class="stat-card"><span class="stat-num">50+</span><span class="stat-label">Repo GitHub</span></div>
-          <div class="stat-card"><span class="stat-num">3+</span><span class="stat-label">Tahun Coding</span></div>
-          <div class="stat-card"><span class="stat-num">10+</span><span class="stat-label">Project Selesai</span></div>
-          <div class="stat-card"><span class="stat-num">∞</span><span class="stat-label">Semangat Belajar</span></div>
+    <section class="section" id="experience">
+      <div class="container">
+        <h2 class="section-title">Saya membangun website, AI workflow, automation, dan internal tools yang benar-benar dipakai.</h2>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-meta"><span class="mono">2024 - Sekarang</span><span>Freelance</span></div>
+            <h3>Fullstack Developer</h3>
+            <p>Membangun aplikasi web untuk klien: dashboard system, platform e-commerce, dan sistem manajemen data dengan React.js, Next.js, Node.js, dan MongoDB.</p>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-meta"><span class="mono">2025 - 2026</span><span>Project</span></div>
+            <h3>E-Office Dinas Pendidikan</h3>
+            <p>Sistem arsip surat digital untuk Dinas Pendidikan Kab. Bandung Barat: Laravel 12, MySQL, manajemen surat, disposisi, pemberkasan, dashboard analytics.</p>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-meta"><span class="mono">2024</span><span>Project</span></div>
+            <h3>Platform Produk Digital</h3>
+            <p>E-commerce produk digital: katalog, checkout, payment integration, dashboard admin.</p>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-meta"><span class="mono">2024</span><span>Project</span></div>
+            <h3>Dashboard Persediaan Barang</h3>
+            <p>Sistem inventori: CRUD, laporan stok, monitoring real-time, autentikasi multi-role.</p>
+          </li>
+        </ol>
+        <div class="focus-strip">
+          <div><span class="focus-label">Fokus</span><p>AI engineering, website development, automation, dan AI integration</p></div>
+          <div><span class="focus-label">Cara kerja</span><p>Cepat, rapi, strategis, dan tetap mudah dirawat setelah rilis</p></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SKILLS -->
-  <section class="section section-dark" id="skills">
-    <div class="container">
-      <h2 class="section-title">My <span>Skills</span></h2>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3>Frontend</h3>
-          <div class="skill-tags">
-            <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span>
-            <span class="tag">React</span><span class="tag">Next.js</span><span class="tag">TailwindCSS</span>
+    <section class="section section-alt" id="stack">
+      <div class="container">
+        <h2 class="section-title">Stack untuk website modern, AI integration, backend systems, dan automation workflows.</h2>
+        <div class="stack-grid">
+          <div class="stack-col">
+            <h3>Frontend</h3>
+            <p class="stack-list">React.js, Next.js, Tailwind CSS, JavaScript, HTML5, CSS3</p>
           </div>
-        </div>
-        <div class="skill-category">
-          <h3>Backend</h3>
-          <div class="skill-tags">
-            <span class="tag">PHP</span><span class="tag">Laravel</span><span class="tag">Node.js</span>
-            <span class="tag">MySQL</span><span class="tag">REST API</span>
+          <div class="stack-col">
+            <h3>Backend &amp; Data</h3>
+            <p class="stack-list">Laravel, Node.js, Express.js, PHP, MySQL, MongoDB, REST API</p>
           </div>
-        </div>
-        <div class="skill-category">
-          <h3>DevOps &amp; Tools</h3>
-          <div class="skill-tags">
-            <span class="tag">Docker</span><span class="tag">Git</span><span class="tag">GitHub</span>
-            <span class="tag">CI/CD</span><span class="tag">Linux</span><span class="tag">Nginx</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3>Cloud &amp; AI</h3>
-          <div class="skill-tags">
-            <span class="tag">Oracle Cloud</span><span class="tag">Vercel</span><span class="tag">VPS</span>
-            <span class="tag">AI Integration</span>
+          <div class="stack-col">
+            <h3>AI &amp; Tools</h3>
+            <p class="stack-list">Python, OpenAI API, AI Automation, Git</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PROJECTS -->
-  <section class="section" id="projects">
-    <div class="container">
-      <h2 class="section-title">My <span>Projects</span></h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-icon">🛒</div>
-          <h3>Payment Edu Digital</h3>
-          <p>Platform pembayaran digital untuk kebutuhan edukasi.</p>
-          <div class="project-tags"><span class="tag-sm">Web</span><span class="tag-sm">Payment</span></div>
-          <a href="https://github.com/RifkiFahrezi86/payment-edu-digital" target="_blank" class="project-link">GitHub →</a>
-        </div>
-        <div class="project-card">
-          <div class="project-icon">⚽</div>
-          <h3>Sportfield Booking</h3>
-          <p>Aplikasi pemesanan lapangan olahraga dengan implementasi DevSecOps.</p>
-          <div class="project-tags"><span class="tag-sm">Laravel</span><span class="tag-sm">DevSecOps</span></div>
-          <a href="https://github.com/RifkiFahrezi86/sportfield-booking-devsecops" target="_blank" class="project-link">GitHub →</a>
-        </div>
-        <div class="project-card">
-          <div class="project-icon">📅</div>
-          <h3>Smart Schedule</h3>
-          <p>Aplikasi penjadwalan cerdas untuk manajemen waktu yang efisien.</p>
-          <div class="project-tags"><span class="tag-sm">JavaScript</span><span class="tag-sm">Scheduler</span></div>
-          <a href="https://github.com/RifkiFahrezi86/smart-schedule3" target="_blank" class="project-link">GitHub →</a>
-        </div>
-        <div class="project-card">
-          <div class="project-icon">🏢</div>
-          <h3>E-Office Arsip Surat</h3>
-          <p>Sistem pengelolaan arsip surat digital untuk perkantoran.</p>
-          <div class="project-tags"><span class="tag-sm">PHP</span><span class="tag-sm">MySQL</span></div>
-          <a href="https://github.com/RifkiFahrezi86/e-office-arsip-surat" target="_blank" class="project-link">GitHub →</a>
-        </div>
-        <div class="project-card">
-          <div class="project-icon">☁️</div>
-          <h3>Cloud Native App</h3>
-          <p>Implementasi aplikasi cloud native dengan microservices architecture.</p>
-          <div class="project-tags"><span class="tag-sm">Docker</span><span class="tag-sm">Microservices</span></div>
-          <a href="https://github.com/RifkiFahrezi86/MICROSERVICES-DESIGN-AND-IMPLEMENTATION" target="_blank" class="project-link">GitHub →</a>
-        </div>
-        <div class="project-card">
-          <div class="project-icon">📊</div>
-          <h3>Dashboard Gudang</h3>
-          <p>Sistem manajemen stok barang gudang yang terorganisir.</p>
-          <div class="project-tags"><span class="tag-sm">Web</span><span class="tag-sm">Dashboard</span></div>
-          <a href="https://github.com/RifkiFahrezi86/dashboard-gudang-barang" target="_blank" class="project-link">GitHub →</a>
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title">Pilihan proyek dari arsip kerja dan eksperimen yang saya bangun.</h2>
+        <div class="projects">
+          <article class="project project-wide">
+            <img src="projects/eoffice.png" alt="Tampilan E-Office" loading="lazy" />
+            <div class="project-body">
+              <p class="project-client mono">Client Project · Dinas Pendidikan KBB · 30 hari</p>
+              <h3>E-Office, Sistem Arsip Surat Digital</h3>
+              <p>Aplikasi manajemen surat dan arsip digital: surat masuk/keluar, disposisi, agenda kegiatan, pemberkasan, download arsip. Laravel 12, MySQL, Bootstrap, Chart.js.</p>
+              <div class="project-links">
+                <a href="https://e-office-arsip-surat.vercel.app/" target="_blank" rel="noopener">Demo</a>
+                <a href="https://github.com/RifkiFahrezi86" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <img src="projects/zogaming.png" alt="Tampilan ZoGaming" loading="lazy" />
+            <div class="project-body">
+              <p class="project-client mono">Client Project · ZoGaming Store · 14 hari</p>
+              <h3>ZoGaming, Platform Steam Sharing</h3>
+              <p>E-commerce gaming: katalog game, filter platform, trending, checkout via WhatsApp. Next.js, Tailwind CSS.</p>
+              <div class="project-links">
+                <a href="https://zogaming.vercel.app/" target="_blank" rel="noopener">Demo</a>
+                <a href="https://github.com/RifkiFahrezi86" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <img src="projects/codehelp.png" alt="Tampilan CodeHelp" loading="lazy" />
+            <div class="project-body">
+              <h3>CodeHelp, Jasa IT &amp; Pemrograman</h3>
+              <p>Website jasa pembuatan website, mobile app, tugas pemrograman, dan skripsi IT. Order form, tracking proyek, paket harga, testimoni.</p>
+              <div class="project-links"><a href="https://github.com/RifkiFahrezi86" target="_blank" rel="noopener">GitHub</a></div>
+            </div>
+          </article>
+
+          <article class="project">
+            <img src="projects/komikverse.png" alt="Tampilan KomikVerse" loading="lazy" />
+            <div class="project-body">
+              <h3>KomikVerse, Platform Baca Komik</h3>
+              <p>Platform baca komik dengan katalog, bookmark, dan reader. Dibangun dengan Next.js dan REST API komik.</p>
+              <div class="project-links"><a href="https://github.com/RifkiFahrezi86" target="_blank" rel="noopener">GitHub</a></div>
+            </div>
+          </article>
+
+          <article class="project">
+            <img src="projects/gudang.png" alt="Tampilan Dashboard Gudang" loading="lazy" />
+            <div class="project-body">
+              <h3>Dashboard Gudang Barang</h3>
+              <p>Sistem stok barang: CRUD, laporan, monitoring. Lengkap dengan customer portal untuk akses klien.</p>
+              <div class="project-links"><a href="https://github.com/RifkiFahrezi86/dashboard-gudang-barang" target="_blank" rel="noopener">GitHub</a></div>
+            </div>
+          </article>
+
+          <article class="project">
+            <img src="projects/smartschedule3.png" alt="Tampilan SmartSchedule 3" loading="lazy" />
+            <div class="project-body">
+              <h3>SmartSchedule, Jadwal Belajar</h3>
+              <p>Penjadwalan belajar, dikembangkan sampai versi 3 dengan UI makin ringkas dan fitur reminder.</p>
+              <div class="project-links"><a href="https://github.com/RifkiFahrezi86/smart-schedule3" target="_blank" rel="noopener">GitHub</a></div>
+            </div>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT -->
-  <section class="section section-dark" id="contact">
-    <div class="container">
-      <h2 class="section-title">Get In <span>Touch</span></h2>
-      <div class="contact-content">
-        <p class="contact-desc">Punya project atau ingin berkolaborasi? Jangan ragu untuk menghubungi saya!</p>
-        <div class="contact-links">
-          <a href="mailto:rifkifka@gmail.com" class="contact-card">
-            <span class="contact-icon">📧</span>
-            <span>rifkifka@gmail.com</span>
+    <section class="section section-alt" id="certificates">
+      <div class="container">
+        <h2 class="section-title">Bukti belajar, eksplorasi, dan peningkatan skill yang terus berjalan.</h2>
+        <div class="certs">
+          <a class="cert cert-verified" href="certificates/nextjs-dashboard.pdf" target="_blank" rel="noopener">
+            <div>
+              <h3>Next.js Dashboard App</h3>
+              <p>Vercel / Next.js Official Course · 2024</p>
+            </div>
+            <span class="cert-badge mono">PDF tersedia</span>
           </a>
-          <a href="https://github.com/RifkiFahrezi86" target="_blank" class="contact-card">
-            <span class="contact-icon">🐙</span>
-            <span>github.com/RifkiFahrezi86</span>
+          <div class="cert">
+            <div>
+              <h3>Web Development Bootcamp</h3>
+              <p>Online Bootcamp · 2024</p>
+            </div>
+            <span class="cert-badge mono">Completed</span>
+          </div>
+          <div class="cert">
+            <div>
+              <h3>JavaScript &amp; React Development</h3>
+              <p>Online Course Platform · 2024</p>
+            </div>
+            <span class="cert-badge mono">Completed</span>
+          </div>
+          <div class="cert">
+            <div>
+              <h3>Database Management System</h3>
+              <p>Universitas, Mata Kuliah · 2023</p>
+            </div>
+            <span class="cert-badge mono">Lulus</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Punya ide, revisi, atau proyek baru?</h2>
+        <p class="contact-desc">Ceritakan kebutuhanmu, saya balas dengan rencana kerja dan estimasi yang jelas.</p>
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:rifkifka@gmail.com">
+            <span class="mono">Email</span>
+            <strong>rifkifka@gmail.com</strong>
+          </a>
+          <a class="contact-card" href="https://github.com/RifkiFahrezi86" target="_blank" rel="noopener">
+            <span class="mono">GitHub</span>
+            <strong>RifkiFahrezi86</strong>
+          </a>
+          <a class="contact-card" href="https://www.instagram.com/rifki_ahmadfahrezi/" target="_blank" rel="noopener">
+            <span class="mono">Instagram</span>
+            <strong>@rifki_ahmadfahrezi</strong>
+          </a>
+          <a class="contact-card" href="tel:+6282159978151">
+            <span class="mono">WhatsApp</span>
+            <strong>+62 821-5997-8151</strong>
           </a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2026 Rifki Nur Fahrezi Ahmad. Built with ❤️</p>
+    <p>© 2026 Rifki Nur Fahrezi Ahmad</p>
   </footer>
 
   <script src="script.js"></script>
