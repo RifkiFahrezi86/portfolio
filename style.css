@@ -157,21 +157,22 @@ body {
 .project-links a:hover { color: var(--accent); }
 
 /* CERTS */
-.certs { display: flex; flex-direction: column; }
-.cert {
-  display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;
-  padding: 1.35rem 0.25rem;
-  border-bottom: 1px solid var(--border);
-  text-decoration: none; color: var(--text);
-  transition: background 0.2s ease;
+.certs-count { color: var(--muted); font-size: 0.8rem; margin: -1rem 0 2rem; }
+.certs { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.25rem; }
+.cert-card {
+  display: flex; flex-direction: column;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  overflow: hidden; transition: border-color 0.2s ease, transform 0.2s ease;
 }
-.cert:first-child { border-top: 1px solid var(--border); }
-.cert:hover { background: rgba(52, 211, 153, 0.04); }
-.cert h3 { font-size: 1rem; font-weight: 600; }
-.cert p { color: var(--muted); font-size: 0.85rem; }
-.cert-badge { color: var(--accent); font-size: 0.75rem; white-space: nowrap; border: 1px solid var(--border); padding: 0.3rem 0.7rem; border-radius: 999px; }
-.cert-verified .cert-badge { background: var(--accent-dim); border-color: transparent; }
-
+.cert-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.cert-thumb { display: block; aspect-ratio: 900 / 636; background: #fff; overflow: hidden; }
+.cert-thumb img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.cert-body { display: flex; flex-direction: column; gap: 0.35rem; padding: 1rem 1.1rem 1.15rem; flex: 1; }
+.cert-body h3 { font-size: 0.95rem; font-weight: 600; line-height: 1.35; }
+.cert-body p { color: var(--muted); font-size: 0.8rem; }
+.cert-links { display: flex; gap: 1rem; margin-top: auto; padding-top: 0.6rem; font-size: 0.75rem; }
+.cert-links a { color: var(--accent); text-decoration: none; }
+.cert-links a:hover { text-decoration: underline; }
 /* CONTACT */
 .contact-desc { color: var(--muted); margin: -1.75rem 0 2.5rem; max-width: 52ch; }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; }

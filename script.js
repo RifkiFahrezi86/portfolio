@@ -12,7 +12,7 @@ const io = new IntersectionObserver(entries => {
     if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
   });
 }, { threshold: 0.12 });
-document.querySelectorAll('.timeline-item, .project, .cert, .contact-card, .stat, .stack-col')
+document.querySelectorAll('.timeline-item, .project, .cert-card, .contact-card, .stat, .stack-col')
   .forEach((el, i) => {
     el.classList.add('reveal');
     el.style.transitionDelay = (i % 4) * 60 + 'ms';
